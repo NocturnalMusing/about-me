@@ -10,7 +10,7 @@ export default function AboutMe() {
 
             <p>As a Front-End Web Developer and Visual Designer I leverage my creativity as an asset towards my passion for building great products with a strong focus on aesthetics and functionality.</p>
 
-            <FontAwesomeIcon icon={faCrow} />
+            <FontAwesomeIcon icon={faCrow} size='3x'/>
         </div>
     )
 }
