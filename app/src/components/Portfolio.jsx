@@ -7,7 +7,7 @@ export default function Portfolio() {
     return (
         <div>
             <Carousel interval={null} className='carousel'>
-                <Carousel.Item>
+                <Carousel.Item className='carousel-item'>
                     <img
                         className="d-block w-100"
                         src="https://img.cinemablend.com/filter:scale/quill/1/4/e/5/2/1/14e5214b7130f782d5ae28042bc88082fa56d8b3.jpg?mw=600"
@@ -19,7 +19,7 @@ export default function Portfolio() {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item>
+                <Carousel.Item className='carousel-item'>
                     <img
                         className="d-block w-100"
                         src="https://img.cinemablend.com/filter:scale/quill/1/4/e/5/2/1/14e5214b7130f782d5ae28042bc88082fa56d8b3.jpg?mw=600"
@@ -32,7 +32,7 @@ export default function Portfolio() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 
-                <Carousel.Item>
+                <Carousel.Item className='carousel-item'>
                     <img
                         className="d-block w-100"
                         src="https://img.cinemablend.com/filter:scale/quill/1/4/e/5/2/1/14e5214b7130f782d5ae28042bc88082fa56d8b3.jpg?mw=600"
@@ -45,7 +45,7 @@ export default function Portfolio() {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item>
+                <Carousel.Item className='carousel-item'>
                     <img
                         className="d-block w-100"
                         src="https://img.cinemablend.com/filter:scale/quill/1/4/e/5/2/1/14e5214b7130f782d5ae28042bc88082fa56d8b3.jpg?mw=600"
