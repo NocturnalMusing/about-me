@@ -8,9 +8,10 @@ export default function AboutMe() {
         <div>
             <h1 className='name'>Calliope Jimenez-Clark</h1>
 
-            <p>As a Front-End Web Developer and Visual Designer I leverage my creativity as an asset towards my passion for building great products with a strong focus on aesthetics and functionality.</p>
+            <p>As a Front-End Web Developer and Visual Designer I leverage my creativity as an asset
+                towards my passion for building great products with a strong focus on aesthetics and functionality.</p>
 
-            <FontAwesomeIcon icon={faCrow} size='3x'/>
+            <FontAwesomeIcon icon={faCrow} size='3x' />
         </div>
     )
 }
