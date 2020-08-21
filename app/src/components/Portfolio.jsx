@@ -1,11 +1,12 @@
 import React from 'react'
+import './Portfolio.css'
 
 import Carousel from 'react-bootstrap/Carousel'
 
 export default function Portfolio() {
     return (
         <div>
-            <Carousel>
+            <Carousel interval={null} className='carousel'>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
