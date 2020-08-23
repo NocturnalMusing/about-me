@@ -1,12 +1,35 @@
 import React from 'react'
 import './Portfolio.css'
 
-import Carousel from 'react-bootstrap/Carousel'
+// import Carousel from 'react-bootstrap/Carousel'
+import { cards } from '../assets/portfolio_cards'
 
 export default function Portfolio() {
+
+    let showSlide = (num) => {
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].setAttribute('style', 'display: none;')
+        }
+
+        cards[num].setAttribute('style', 'display: block;')
+    }
+
     return (
         <div>
-            <Carousel interval={null} className='carousel'>
+            {cards.map(card =>
+                <div>
+                    <img src={card.image} />
+                    <h3>{card.name}</h3>
+                    <p>{card.caption}</p>
+                    <a href={card.url}>Live View</a>
+                </div>
+            )}
+        </div>
+    )
+}
+
+
+{/* <Carousel interval={null} className='carousel'>
                 <Carousel.Item className='carousel-item'>
                     <img
                         className="d-block w-100"
@@ -57,7 +80,4 @@ export default function Portfolio() {
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
-        </div>
-    )
-}
+            </Carousel> */}
