@@ -9,21 +9,11 @@ export default function Portfolio() {
     let current = 0
 
     const handleClickRight = (e) => {
-        if (current < cards.length - 1) {
-            current += 1
-        }
-        else {
-            current = 0
-        }
+        current < cards.length - 1 ? current += 1 : current = 0
     }
 
     const handleClickLeft = (e) => {
-        if (current > 0) {
-            current -= 1
-        }
-        else {
-            current = cards.length - 1
-        }
+        current > 0 ? current -= 1 : current = cards.length - 1
     }
 
     return (
