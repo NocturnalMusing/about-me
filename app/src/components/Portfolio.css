@@ -1,4 +1,12 @@
 .carousel {
-    width: 50%;
+    display: flex;
     overflow: hidden;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }

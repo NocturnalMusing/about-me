@@ -6,13 +6,13 @@ import { cards } from '../assets/portfolio_cards'
 
 export default function Portfolio() {
 
-    const showSlide = (num) => {
-        // for (let i = 0; i < cards.length; i++) {
-        //     cards[i].setAttribute('style', 'display: none;')
-        // }
+    // const showSlide = (num) => {
+    //     for (let i = 0; i < cards.length; i++) {
+    //         cards[i].setAttribute('style', 'display: none;')
+    //     }
 
-        // cards[num].setAttribute('style', 'display: block;')
-    }
+    //     cards[num].setAttribute('style', 'display: block;')
+    // }
 
     let current = 0
 
@@ -23,8 +23,6 @@ export default function Portfolio() {
         else {
             current = 0
         }
-
-        showSlide(current)
     }
 
     const handleClickLeft = (e) => {
@@ -34,15 +32,15 @@ export default function Portfolio() {
         else {
             current = cards.length - 1
         }
-
-        showSlide(current)
     }
 
     return (
         <div className="carousel">
             <button onClick={handleClickLeft}>Back</button>
             {cards.map(card =>
-                <div>
+                <div className={cards.findIndex === 0 ? 'show' : 'hide'}>
+                    {/* If cards index === the current visible card, apply 'show'
+                    Else, apply 'hide' */}
                     <img src={card.image} />
                     <h3>{card.name}</h3>
                     <p>{card.caption}</p>
