@@ -10,20 +10,23 @@ export default function Portfolio() {
 
     const handleClickRight = (e) => {
         current < cards.length - 1 ? current += 1 : current = 0
+        console.log(current)
     }
-
+    
     const handleClickLeft = (e) => {
-        current > 0 ? current -= 1 : current = cards.length - 1
+        current = ( current > 0 ) ? current - 1 : cards.length - 1
+        console.log(current)
     }
+    
 
     return (
         <div className="carousel">
             <button onClick={handleClickLeft}>Back</button>
             {cards.map(card =>
-                <div className={cards.findIndex === 0 ? 'show' : 'hide'}>
+                <div className={cards.indexOf(card) === current ? 'show' : 'hide'}>
                     {/* If cards index === the current visible card, apply 'show'
                     Else, apply 'hide' */}
-                    <img src={card.image} />
+                    <img src={card.image} alt={card.alt}/>
                     <h3>{card.name}</h3>
                     <p>{card.caption}</p>
                     <a href={card.url}>Live View</a>
