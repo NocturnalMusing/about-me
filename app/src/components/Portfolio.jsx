@@ -6,16 +6,41 @@ import { cards } from '../assets/portfolio_cards'
 
 export default function Portfolio() {
 
-    let showSlide = (num) => {
-        for (let i = 0; i < cards.length; i++) {
-            cards[i].setAttribute('style', 'display: none;')
+    const showSlide = (num) => {
+        // for (let i = 0; i < cards.length; i++) {
+        //     cards[i].setAttribute('style', 'display: none;')
+        // }
+
+        // cards[num].setAttribute('style', 'display: block;')
+    }
+
+    let current = 0
+
+    const handleClickRight = (e) => {
+        if (current < cards.length - 1) {
+            current += 1
+        }
+        else {
+            current = 0
         }
 
-        cards[num].setAttribute('style', 'display: block;')
+        showSlide(current)
+    }
+
+    const handleClickLeft = (e) => {
+        if (current > 0) {
+            current -= 1
+        }
+        else {
+            current = cards.length - 1
+        }
+
+        showSlide(current)
     }
 
     return (
-        <div>
+        <div className="carousel">
+            <button onClick={handleClickLeft}>Back</button>
             {cards.map(card =>
                 <div>
                     <img src={card.image} />
@@ -24,6 +49,7 @@ export default function Portfolio() {
                     <a href={card.url}>Live View</a>
                 </div>
             )}
+            <button onClick={handleClickRight}>Forward</button>
         </div>
     )
 }
