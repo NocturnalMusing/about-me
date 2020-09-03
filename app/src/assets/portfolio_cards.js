@@ -22,4 +22,12 @@ export const cards = [
         "caption": "three",
         "url": "/"
     },
+    
+    {
+        "img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/1_88a9c.jpg",
+        "alt": "...",
+        "name": "four",
+        "caption": "four",
+        "url": "/"
+    },
 ]
