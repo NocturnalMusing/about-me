@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Portfolio.css'
 
 // import Carousel from 'react-bootstrap/Carousel'
@@ -6,16 +6,17 @@ import { cards } from '../assets/portfolio_cards'
 
 export default function Portfolio() {
 
-    let current = 0
+    const [ count, setCount ] = useState(0)
 
     const handleClickRight = (e) => {
-        current < cards.length - 1 ? current += 1 : current = 0
-        console.log(current)
+        count < cards.length - 1 ? setCount(count += 1) : setCount(0)
+        console.log(count)
     }
+    // THIS ONE DOESNT WORK
     
     const handleClickLeft = (e) => {
-        current = ( current > 0 ) ? current - 1 : cards.length - 1
-        console.log(current)
+        count > 0 ? setCount(count - 1) : setCount(cards.length - 1)
+        console.log(count)
     }
     
 
@@ -23,9 +24,7 @@ export default function Portfolio() {
         <div className="carousel">
             <button onClick={handleClickLeft}>Back</button>
             {cards.map(card =>
-                <div className={cards.indexOf(card) === current ? 'show' : 'hide'}>
-                    {/* If cards index === the current visible card, apply 'show'
-                    Else, apply 'hide' */}
+                <div className={cards.indexOf(card) === count ? 'show' : 'hide'}>
                     <img src={card.image} alt={card.alt}/>
                     <h3>{card.name}</h3>
                     <p>{card.caption}</p>
