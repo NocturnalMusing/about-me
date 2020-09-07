@@ -3,9 +3,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCrow } from '@fortawesome/free-solid-svg-icons'
 
+import './AboutMe.css'
+
 export default function AboutMe() {
     return (
-        <div>
+        <div className='about-me'>
             <h1 className='name'>Calliope Jimenez-Clark</h1>
 
             <p>As a Front-End Web Developer and Visual Designer I leverage my creativity as an asset

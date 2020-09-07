@@ -2,21 +2,19 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
+import './ContactMe.css'
+
 export default function ContactMe() {
     return (
-        <div>
+        <div className='contact-me'>
             <h1>Contact Me</h1>
 
-            <p>Email</p>
-            <a href='https://www.linkedin.com/in/calliope-jimenez-clark/'>
-                LinkedIn
-            </a>
-            <a href='https://github.com/NocturnalMusing'>
-                GitHub
-            </a>
-            <Link to='/resume'>
-                Resume
-            </Link>
+            <ul>
+                <li>Email</li>
+                <li><a href='https://www.linkedin.com/in/calliope-jimenez-clark/'>LinkedIn</a></li>
+                <li> <a href='https://github.com/NocturnalMusing'>GitHub</a></li>
+                <li><Link to='/resume'>Resume</Link></li>
+            </ul>
         </div>
     )
 }
