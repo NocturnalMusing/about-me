@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './Portfolio.css'
 
-// import Carousel from 'react-bootstrap/Carousel'
 import { cards } from '../assets/portfolio_cards'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Portfolio() {
 
@@ -19,20 +20,26 @@ export default function Portfolio() {
 
     return (
         <div className="carousel">
-            <button onClick={handleClickLeft}>Back</button>
-            <div className='carousel-content'>
-                {cards.map(card =>
-                    <div className={cards.indexOf(card) === count ? 'show' : 'hide'}>
-                        <img className='carousel-img' src={card.img} alt={card.alt} />
-                        <div className='carousel-text'>
-                            <h3>{card.name}</h3>
-                            <p>{card.caption}</p>
-                            <a href={card.url}>Live View</a>
+            <FontAwesomeIcon icon={faAngleLeft} size='4x' 
+                className='arrow-left'
+                onClick={handleClickLeft}/>
+            <div className='carousel-background'>
+                <div className='carousel-content'>
+                    {cards.map(card =>
+                        <div className={cards.indexOf(card) === count ? 'show' : 'hide'}>
+                            <img className='carousel-img' src={card.img} alt={card.alt} />
+                            <div className='carousel-text'>
+                                <h3>{card.name}</h3>
+                                <p>{card.caption}</p>
+                                <a href={card.url}>Live View</a>
+                            </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
-            <button onClick={handleClickRight}>Forward</button>
+            <FontAwesomeIcon icon={faAngleRight} size='4x' 
+                className='arrow-right'
+                onClick={handleClickRight}/>
         </div>
     )
 }

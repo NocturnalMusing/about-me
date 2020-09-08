@@ -7,20 +7,54 @@
 .carousel {
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
+    width: 50%;
+    color: white;
+}
+
+.arrow-left,
+.arrow-right {
+    margin: 35px;
+    color: rgb(142, 142, 142);
+}
+
+.arrow-left :hover {
+    color: white;
+}
+
+.arrow-right :hover {
+    color: white;
+}
+
+.carousel-background {
+    display: flex;
+    justify-content: center;
+    background: url(../assets/images/image.png) top center no-repeat; 
+    background-size: cover;
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
 }
 
 .carousel-content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     text-align: center;
-    height: 750px;
-    width: 750px;
-    background-color: brown;
+    height: 650px;
+    width: 650px;
+    background-color: rgba(255, 255, 255, .4);
     border-radius: 50%;
+    align-items: center;
 }
 
 .carousel-img {
-    width: 75%;
+    width: 450px;
+    /* adjust border radius
+    add shadow
+    add fade, maybe? */
 }
 
 .show {

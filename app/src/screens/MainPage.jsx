@@ -9,11 +9,11 @@ import './MainPage.css'
 export default function MainPage() {
     return (
         <div className='main'>
-            <AboutMe />
-
-            <Portfolio />
-
-            <ContactMe />
+            <div className='main-sub'>
+                <AboutMe />
+                <Portfolio />
+                <ContactMe />
+            </div>
         </div>
     )
 }

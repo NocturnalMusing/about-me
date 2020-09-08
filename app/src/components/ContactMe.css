@@ -1,6 +1,8 @@
 .contact-me {
     width: 25%;
     padding: 25px;
+    align-self: flex-end;
+    padding-left: 5%;
 }
 
 ul {

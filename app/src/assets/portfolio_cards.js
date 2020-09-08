@@ -9,24 +9,24 @@ export const cards = [
 
     {
         "img": "https://i.insider.com/5d2c91a521a8610136250c05?width=923&format=jpeg",
-        "alt": "...",
-        "name": "two",
+        "alt": "Closer Look Homepage",
+        "name": "Closer Look",
         "caption": "two",
-        "url": "/"
+        "url": "https://relaxed-brown-89d408.netlify.app/"
     },
 
     {
         "img": "https://img.cinemablend.com/filter:scale/quill/a/c/a/1/4/5/aca14564f68ac588fc3f0a40c1b086c81afe9abc.jpg?mw=600",
-        "alt": "...",
-        "name": "three",
+        "alt": "Pokemon Random Generator",
+        "name": "Pokemon Team Generator",
         "caption": "three",
         "url": "/"
     },
     
     {
         "img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/1_88a9c.jpg",
-        "alt": "...",
-        "name": "four",
+        "alt": "Calm Kitten Homepage",
+        "name": "Calm Kitten",
         "caption": "four",
         "url": "/"
     },

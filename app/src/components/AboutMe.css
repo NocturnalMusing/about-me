@@ -1,4 +1,6 @@
 .about-me {
     width: 25%;
     padding: 25px;
+    align-self: flex-start;
+    margin-left: 5%;
 }
