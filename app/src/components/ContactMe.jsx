@@ -10,7 +10,7 @@ import { faFile, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 export default function ContactMe() {
     return (
         <div className='contact-me'>
-            <h1>Contact Me</h1>
+            <h1 className='contact-header'>Contact Me</h1>
 
             <ul>
                 <li>
