@@ -4,7 +4,7 @@ export const cards = [
         "alt": "Pixel Menagerie Homepage",
         "name": "Pixel Menagerie",
         "caption": "one",
-        "url": "/"
+        "url": "http://pixel-menagerie.surge.sh/"
     },
 
     {
