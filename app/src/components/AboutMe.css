@@ -1,8 +1,24 @@
 .about-me {
+    font-family: 'Poppins', sans-serif;
     width: 25%;
     padding: 25px;
     align-self: flex-start;
     margin-left: 5%;
+}
+
+.first-name {
+    font-weight: 200;
+    line-height: 15px;
+    font-size: 40px;
+}
+
+.last-name {
+    font-weight: 400;
+}
+
+.blurb {
+    padding-top: 25px;
+    width: 80%;
 }
 
 .poe {
