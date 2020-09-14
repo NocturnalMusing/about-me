@@ -1,6 +1,6 @@
 export const cards = [
     {
-        "img": "https://img.cinemablend.com/filter:scale/quill/0/1/9/b/1/e/019b1e6d12a6a63b3cdafe1b95a34734b136fdd9.jpg?fw=1200",
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/PixelMenagerie_fhha8r.png",
         "alt": "Pixel Menagerie Homepage",
         "name": "Pixel Menagerie",
         "caption": "one",
@@ -8,7 +8,7 @@ export const cards = [
     },
 
     {
-        "img": "https://i.insider.com/5d2c91a521a8610136250c05?width=923&format=jpeg",
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/CloserLook_kvxmxf.png",
         "alt": "Closer Look Homepage",
         "name": "Closer Look",
         "caption": "two",
@@ -16,18 +16,19 @@ export const cards = [
     },
 
     {
-        "img": "https://img.cinemablend.com/filter:scale/quill/a/c/a/1/4/5/aca14564f68ac588fc3f0a40c1b086c81afe9abc.jpg?mw=600",
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/PokemonRandom_oxir7m.png",
         "alt": "Pokemon Random Generator",
         "name": "Pokemon Team Generator",
         "caption": "three",
-        "url": "/"
+        "url": "https://git.generalassemb.ly/Calliope/POKEMON-Random-Team-Generator"
+        // This URL leads to the repo for this project. Update when you've reworked the code and properly deployed it.
     },
     
     {
-        "img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/1_88a9c.jpg",
-        "alt": "Calm Kitten Homepage",
-        "name": "Calm Kitten",
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/ComfortKitten_amu5hj.png",
+        "alt": "Comfort Kitten Homepage",
+        "name": "Comfort Kitten",
         "caption": "four",
-        "url": "/"
+        "url": "https://comfortkitten.netlify.app/"
     },
 ]
