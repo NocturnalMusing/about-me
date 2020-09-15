@@ -29,9 +29,9 @@ export default function Portfolio() {
                         <div className={cards.indexOf(card) === count ? 'show' : 'hide'}>
                             <img className='carousel-img' src={card.img} alt={card.alt} />
                             <div className='carousel-text'>
-                                <h3>{card.name}</h3>
-                                <p>{card.caption}</p>
-                                <a href={card.url}>Live View</a>
+                                <h3 className='card-name'>{card.name}</h3>
+                                <p className='card-caption'>{card.caption}</p>
+                                <a className='card-url' href={card.url}>Live View</a>
                             </div>
                         </div>
                     )}

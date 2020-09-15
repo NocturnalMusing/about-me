@@ -4,6 +4,7 @@ Arrow bounce
 */
 
 .carousel {
+    font-family: 'Kumbh Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,8 +59,27 @@ Arrow bounce
     box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, .5);
     margin-top: 5%;
     margin-bottom: 5%;
-    /* adjust border radius
-    add fade, maybe? */
+}
+
+.card-name {
+    font-weight: 900;
+    text-shadow: -1px 2px 1px #000;
+}
+
+.card-caption {
+    font-weight: 600;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-shadow: -1px 1px 2px #000;
+}
+
+.card-url {
+    color: white;
+    text-decoration: underline;
+}
+
+.card-url:hover {
+    color: rgba(241, 56, 232);
 }
 
 .show {
