@@ -1,0 +1,17 @@
+.resume {
+    display: flex;
+}
+
+.resume a {
+    color: rgb(142, 142, 142);
+    margin: 25px;
+}
+
+.resume a:hover {
+    color: white;
+}
+
+.resume h3 {
+    margin: 0 auto;
+    align-self: flex-end;
+}

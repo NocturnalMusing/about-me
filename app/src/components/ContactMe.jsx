@@ -15,7 +15,7 @@ export default function ContactMe() {
             <ul>
                 <li>
                     <FontAwesomeIcon icon={faEnvelopeSquare} className='contact-icon' size='1x'/>
-                    Email
+                    <a href='mailto:c.jimenezclark@gmail.com'>Email</a>
                 </li>
                 <li> 
                     <FontAwesomeIcon icon={faLinkedin} className='contact-icon' size='1x'/>
