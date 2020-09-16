@@ -19,12 +19,40 @@ Arrow bounce
     color: rgb(142, 142, 142);
 }
 
+.arrow-left {
+    animation: left 1s alternate infinite;
+}
+
+.arrow-right {
+    animation: right 1s alternate infinite;
+}
+
 .arrow-left :hover {
     color: white;
 }
 
 .arrow-right :hover {
     color: white;
+}
+
+@keyframes right {
+    0% {
+        transform: translate(0, 0);
+    }
+      
+    100% {
+        transform: translate(10px, 0);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translate(0, 0);
+    }
+      
+    100% {
+        transform: translate(-10px, 0);
+    }
 }
 
 .carousel-background {
