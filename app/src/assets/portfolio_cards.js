@@ -1,33 +1,34 @@
 export const cards = [
     {
-        "img": "https://img.cinemablend.com/filter:scale/quill/0/1/9/b/1/e/019b1e6d12a6a63b3cdafe1b95a34734b136fdd9.jpg?fw=1200",
-        "alt": "...",
-        "name": "one",
-        "caption": "one",
-        "url": "/"
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/PixelMenagerie_fhha8r.png",
+        "alt": "Pixel Menagerie Homepage",
+        "name": "Pixel Menagerie",
+        "caption": "This full-stack application I had the pleasure of developing allows users to create a profile and collect a selection of virtual pets. Users are able to edit a pet's name, personality, and release them in the event they are no longer wanted.",
+        "url": "http://pixel-menagerie.surge.sh/"
     },
 
     {
-        "img": "https://i.insider.com/5d2c91a521a8610136250c05?width=923&format=jpeg",
-        "alt": "...",
-        "name": "two",
-        "caption": "two",
-        "url": "/"
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/CloserLook_kvxmxf.png",
+        "alt": "Closer Look Homepage",
+        "name": "Closer Look",
+        "caption": "I collaborated with a team of developers and UX Designers to develop Closer Look; a website which allows users to dive deeper into a brands' ethical actions when viewing their products while shopping online.",
+        "url": "https://relaxed-brown-89d408.netlify.app/"
     },
 
     {
-        "img": "https://img.cinemablend.com/filter:scale/quill/a/c/a/1/4/5/aca14564f68ac588fc3f0a40c1b086c81afe9abc.jpg?mw=600",
-        "alt": "...",
-        "name": "three",
-        "caption": "three",
-        "url": "/"
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/PokemonRandom_oxir7m.png",
+        "alt": "Pokemon Random Generator",
+        "name": "Pokemon Team Generator",
+        "caption": "Utilizing the PokemonAPI I developed a sorting game which allows users to generate their own team of six Pokemon, delivering important information in regards to each creature for the user to review.",
+        "url": "https://git.generalassemb.ly/Calliope/POKEMON-Random-Team-Generator"
+        // This URL leads to the repo for this project. Update when you've reworked the code and properly deployed it.
     },
     
     {
-        "img": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/1_88a9c.jpg",
-        "alt": "...",
-        "name": "four",
-        "caption": "four",
-        "url": "/"
+        "img": "https://res.cloudinary.com/nocturnalmusing/image/upload/v1600114905/Portfolio/ComfortKitten_amu5hj.png",
+        "alt": "Comfort Kitten Homepage",
+        "name": "Comfort Kitten",
+        "caption": "Comfort Kitten is my first venture into developing a full-stack mental health app, with a focus on mitigating symptoms of mental illness and connecting individuals with local resources.",
+        "url": "https://comfortkitten.netlify.app/"
     },
 ]

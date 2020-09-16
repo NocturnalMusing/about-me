@@ -1,0 +1,34 @@
+.contact-me {
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    padding: 25px;
+    align-self: flex-end;
+    padding-left: 5%;
+}
+
+.contact-me a {
+    color: white;
+}
+
+.contact-me a:hover {
+    color: rgba(249, 174, 247);
+}
+
+.contact-header {
+    font-weight: 500;
+    font-size: 30px;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -25px;
+}
+
+li {
+    padding: 5px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
