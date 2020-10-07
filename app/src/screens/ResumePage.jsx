@@ -7,6 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
 
+import ResumeEmployment from '../components/ResumeEmployment'
+import ResumeSkills from '../components/ResumeSkills'
+import ResumeEducation from '../components/ResumeEducation'
+
 library.add(faAngleDoubleLeft)
 
 export default function ResumePage() {
@@ -16,7 +20,9 @@ export default function ResumePage() {
                 <FontAwesomeIcon icon='angle-double-left' size='3x'/>
             </Link>
 
-            <h3>To be added...</h3>
+            <ResumeEmployment />
+            <ResumeEducation />
+            <ResumeSkills />
         </div>
     )
 }
