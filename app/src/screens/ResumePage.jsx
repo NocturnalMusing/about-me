@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './ResumePage.css'
-
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
+
+import { Resume } from '../assets/images/Resume.png'
 
 library.add(faAngleDoubleLeft)
 
@@ -16,7 +16,7 @@ export default function ResumePage() {
                 <FontAwesomeIcon icon='angle-double-left' size='3x'/>
             </Link>
 
-            <h3>To be added...</h3>
+            <img src="{Resume}">
         </div>
     )
 }
